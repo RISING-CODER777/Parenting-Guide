@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: background 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.app-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .app-container {
+    background: #2c2c2c;
+    color: white;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.mic-active {
+    color: red;
+    font-weight: bold;
+}
+
+.advice-box {
+    background: white;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .advice-box {
+    background: #333;
+    color: white;
+}
+
+.loading-spinner {
+    margin-top: 20px;
+}
+
+.app-header {
+    color: #d63384;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.app-footer {
+    margin-top: 20px;
+    color: gray;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.header-light {
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.header-dark {
+    background-color: #1e1e1e;
+    color: white;
+}
