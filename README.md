@@ -13,7 +13,7 @@ A web app for new moms to get parenting advice using AWS Bedrock, Lambda, API Ga
 
 ### Backend
 1. **Lambda Function**  
-   - In AWS Lambda, create `ParentingGuideFunction` (Python 3.9).  
+   - In AWS Lambda, create `ParentingGuideFunction`. 
    - Copy the code from `app.py` (in the backend directory) into the Lambda editor and save.  
 
 2. **API Gateway**  
