@@ -1,3 +1,5 @@
+---
+
 ## 👶 Parenting-Guide
 
 A web app for new moms to get parenting advice using AWS Bedrock, Lambda, API Gateway, S3, and React + Vite.
@@ -49,25 +51,11 @@ A web app for new moms to get parenting advice using AWS Bedrock, Lambda, API Ga
      ```
 
 4. **IAM Policies for Lambda**  
-   | **Policy Name**            | **Type**      | **Attached Via** |  
-   |----------------------------|---------------|------------------|  
-   | AmazonS3FullAccess         | AWS managed   | Directly         |  
-   | AmazonTranscribeFullAccess | AWS managed   | Directly         |  
-   - **Custom Inline Policy**:  
-     - Name: `BedrockInvokeModelPolicy`  
-     - JSON:  
-       ```json
-       {
-           "Version": "2012-10-17",
-           "Statement": [
-               {
-                   "Effect": "Allow",
-                   "Action": "bedrock:InvokeModel",
-                   "Resource": "arn:aws:bedrock:us-east-1::model/meta.llama3-8b-instruct-v1:0"
-               }
-           ]
-       }
-       ```
+   | **Policy Name**              | **Type**      | **Attached Via** |  
+   |------------------------------|---------------|------------------|  
+   | `AmazonS3FullAccess`         | AWS managed   | Directly         |  
+   | `AmazonTranscribeFullAccess` | AWS managed   | Directly         |  
+   | `AmazonBedrockFullAccess`    | AWS managed   | Directly         |  
 
 ### Frontend
 1. **Install**  
